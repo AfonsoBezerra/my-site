@@ -1,23 +1,22 @@
-
 /* NAVIGATION*/
-window.onscroll = function () {
-	scrollFunction();
-	scrollFunctionBTT(); // back to top button
+window.onscroll = function() {
+    scrollFunction();
+    scrollFunctionBTT(); // back to top button
 };
 
 function scrollFunction() {
-	let intViewportWidth = window.innerWidth;
-	if (
-		document.body.scrollTop > 30 ||
-		(document.documentElement.scrollTop > 30) & (intViewportWidth > 991)
-	) {
-		document.getElementById("navbar").classList.add("top-nav-collapse");
-	} else if (
-		document.body.scrollTop < 30 ||
-		(document.documentElement.scrollTop < 30) & (intViewportWidth > 991)
-	) {
-		document.getElementById("navbar").classList.remove("top-nav-collapse");
-	}
+    let intViewportWidth = window.innerWidth;
+    if (
+        document.body.scrollTop > 30 ||
+        (document.documentElement.scrollTop > 30) & (intViewportWidth > 991)
+    ) {
+        document.getElementById("navbar").classList.add("top-nav-collapse");
+    } else if (
+        document.body.scrollTop < 30 ||
+        (document.documentElement.scrollTop < 30) & (intViewportWidth > 991)
+    ) {
+        document.getElementById("navbar").classList.remove("top-nav-collapse");
+    }
 }
 
 // NAVBAR ON MOBILE
@@ -30,7 +29,7 @@ for (let i = 0; i < elements.length; i++) {
 }
 
 document.querySelector(".navbar-toggler").addEventListener("click", () => {
-  document.querySelector(".offcanvas-collapse").classList.toggle("open");
+    document.querySelector(".offcanvas-collapse").classList.toggle("open");
 });
 
 // HOVER ON DESKTOP
@@ -39,12 +38,12 @@ function toggleDropdown(e) {
     let _m = document.querySelector(".dropdown-menu", _d);
 
     setTimeout(
-        function () {
-        const shouldOpen = _d.matches(":hover");
-        _m.classList.toggle("show", shouldOpen);
-        _d.classList.toggle("show", shouldOpen);
+        function() {
+            const shouldOpen = _d.matches(":hover");
+            _m.classList.toggle("show", shouldOpen);
+            _d.classList.toggle("show", shouldOpen);
 
-        _d.setAttribute("aria-expanded", shouldOpen);
+            _d.setAttribute("aria-expanded", shouldOpen);
         },
         e.type === "mouseleave" ? 300 : 0
     );
@@ -101,36 +100,42 @@ AOS.init({
     once: true, // whether animation should happen only once - while scrolling down
 });
 
-var typed = new Typed(".auto-input" , {
-    strings:[
-    "Afonso Bezerra", "Web Developer", "UI Designer"
+var typed = new Typed(".auto-input", {
+    strings: [
+        "Afonso Bezerra", "Web Developer", "UI Designer"
     ],
-    typeSpeed : 100,
-    backSpeed : 100,
+    typeSpeed: 100,
+    backSpeed: 100,
     loop: true
 });
 
-document.getElementById('card1').addEventListener('click', () =>{
+document.getElementById('card1').addEventListener('click', () => {
     window.open('https://dom.crbconstrutora.com.br/', '_blank');
 })
 
-document.getElementById('card3').addEventListener('click', () =>{
+document.getElementById('card3').addEventListener('click', () => {
     window.open('https://www.crbconstrutora.com.br/apartamentos-em-campinas-venda/', '_blank');
 })
 
-document.getElementById('card4').addEventListener('click', () =>{
+document.getElementById('card4').addEventListener('click', () => {
     window.open('http://calculadora.afonsobezerra.com/', '_blank');
 })
 
+document.getElementById('card5').addEventListener('click', () => {
+    window.open('https://site-blumo.vercel.app/', '_blank');
+})
 
-$(".meter > span").each(function () {
+document.getElementById('card6').addEventListener('click', () => {
+    window.open('http://www.amac.eng.br/', '_blank');
+})
+
+$(".meter > span").each(function() {
     $(this)
-      .data("origWidth", $(this).width())
-      .width(0)
-      .animate(
-        {
-          width: $(this).data("origWidth")
-        },
-        1200
-      );
-  });
+        .data("origWidth", $(this).width())
+        .width(0)
+        .animate({
+                width: $(this).data("origWidth")
+            },
+            1200
+        );
+});
