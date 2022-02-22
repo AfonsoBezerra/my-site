@@ -118,7 +118,7 @@ document.getElementById('card3').addEventListener('click', () => {
 })
 
 document.getElementById('card4').addEventListener('click', () => {
-    window.open('http://calculadora.afonsobezerra.com/', '_blank');
+    window.open('https://tips-calculator-gules.vercel.app/', '_blank');
 })
 
 document.getElementById('card5').addEventListener('click', () => {
