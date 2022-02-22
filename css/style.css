@@ -1043,7 +1043,7 @@ li {
 
 @media screen and (min-width:1444px) {
     .cardprj {
-        grid-template-columns: 25% 25% 25%;
+        grid-template-columns: 23% 23% 23%;
     }
 }
 
