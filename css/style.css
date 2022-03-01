@@ -77,13 +77,17 @@ li {
 
 
 /* Section Background */
-
 .home,
-.about,
-.contact,
 .plans,
+.about,
 .work {
     height: 100vh;
+    position: relative;
+}
+
+
+.contact {
+    height: 100%;
     position: relative;
 }
 
