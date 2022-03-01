@@ -530,6 +530,39 @@ li {
     padding: 0px 10px;
 }
 
+.icon4::before {
+    font-family: 'font-icon';
+    content: '\f41b';
+    font-size: 40px;
+    background: -webkit-gradient( linear, left top, left bottom, from(#0ee951), to(#00dabf));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0px 10px;
+}
+
+.icon5::before {
+    font-family: 'font-icon';
+    content: '\f41e';
+    font-size: 40px;
+    background: -webkit-gradient( linear, left top, left bottom, from(#0ee951), to(#00dabf));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0px 10px;
+}
+
+.icon6::before {
+    font-family: 'font-icon';
+    content: '\f3d3';
+    font-size: 40px;
+    background: -webkit-gradient( linear, left top, left bottom, from(#0ee951), to(#00dabf));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding: 0px 10px;
+}
+
 .card2 {
     background-image: url('../assets/images/home.jpg');
     background-repeat: no-repeat;
@@ -580,6 +613,16 @@ li {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.583);
 }
 
+.card7 {
+    background-image: url('../assets/images/huuddle_img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    display: grid;
+    grid-template-rows: 1fr auto 1fr;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.583);
+}
+
 .img-desk {
     width: 100%;
     height: 100px;
@@ -595,7 +638,7 @@ li {
     grid-row: 1;
     letter-spacing: 5px;
     width: 100%;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 700;
     display: flex;
     justify-content: space-between;
@@ -648,7 +691,7 @@ li {
 
 .sobre-desk {
     grid-row: 2;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 700;
     align-self: center;
     text-align: center;
@@ -714,7 +757,7 @@ li {
     position: absolute;
     z-index: 10;
     width: 100%;
-    height: 350px;
+    height: 300px;
     background-color: rgba(0, 0, 0, 0.782);
     backdrop-filter: blur(10px);
     transition: all .35s;
@@ -749,7 +792,7 @@ li {
 .card2:hover .img-desk {
     position: relative;
     z-index: 10;
-    height: 350px;
+    height: 300px;
     border: 1px solid rgba(0, 0, 0, 0.337);
     background-color: rgba(0, 0, 0, 0.782);
     backdrop-filter: blur(10px);
@@ -781,7 +824,7 @@ li {
     position: absolute;
     z-index: 10;
     width: 100%;
-    height: 350px;
+    height: 300px;
     background-color: rgba(0, 0, 0, 0.782);
     backdrop-filter: blur(10px);
     transition: all .35s;
@@ -822,7 +865,7 @@ li {
     position: absolute;
     z-index: 10;
     width: 100%;
-    height: 350px;
+    height: 300px;
     background-color: rgba(0, 0, 0, 0.782);
     backdrop-filter: blur(10px);
     transition: all .35s;
@@ -858,7 +901,7 @@ li {
     position: absolute;
     z-index: 10;
     width: 100%;
-    height: 350px;
+    height: 300px;
     background-color: rgba(0, 0, 0, 0.782);
     backdrop-filter: blur(10px);
     transition: all .35s;
@@ -877,30 +920,66 @@ li {
 
 .card6:hover .sobre-desk {
     display: block;
-    animation: entrada .5s ease-in-out;
+    animation: entrada .6s ease-in-out;
 }
 
 .card6:hover .icons-prj-desk {
     display: flex;
-    animation: entrada .5s ease-in-out;
+    animation: entrada .8s ease-in-out;
 }
 
 .card6:hover .vejamais {
     display: block;
-    animation: entrada .5s ease-in-out;
+    animation: entrada .8s ease-in-out;
 }
 
 .card6:hover .img-desk {
     position: absolute;
     z-index: 10;
     width: 100%;
-    height: 350px;
+    height: 300px;
     background-color: rgba(0, 0, 0, 0.782);
     backdrop-filter: blur(10px);
     transition: all .35s;
 }
 
 .card6:hover .title-desk span::before {
+    font-family: 'icon-solid';
+    content: '\f358';
+    font-size: 40px;
+    background: white;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 1s;
+}
+
+.card7:hover .sobre-desk {
+    display: block;
+    animation: entrada .5s ease-in-out;
+}
+
+.card7:hover .icons-prj-desk {
+    display: flex;
+    animation: entrada .5s ease-in-out;
+}
+
+.card7:hover .vejamais {
+    display: block;
+    animation: entrada .5s ease-in-out;
+}
+
+.card7:hover .img-desk {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.782);
+    backdrop-filter: blur(10px);
+    transition: all .35s;
+}
+
+.card7:hover .title-desk span::before {
     font-family: 'icon-solid';
     content: '\f358';
     font-size: 40px;
@@ -954,11 +1033,14 @@ li {
     .card6 {
         height: 500px;
     }
+    .card7 {
+        height: 500px;
+    }
 }
 
 @media screen and (min-width:1024px) {
     .cardprj {
-        grid-template-columns: 30% 30% 30%;
+        grid-template-columns: 30% 30% 30% 30%;
         grid-template-rows: 1fr 1fr;
         justify-content: center;
         column-gap: 20px;
@@ -973,7 +1055,7 @@ li {
     .card1 {
         grid-column: 2;
         grid-row: 1;
-        height: 400px;
+        height: 350px;
         display: grid;
         grid-template-rows: auto;
         box-shadow: inset -5px -200px 120px -120px black, 0 0 15px rgba(0, 0, 0, 0.255);
@@ -983,14 +1065,14 @@ li {
     .card2 {
         grid-column: 1;
         grid-row: 1;
-        height: 400px;
+        height: 350px;
         grid-template-rows: auto;
         box-shadow: inset -5px -200px 120px -120px black, 0 0 15px rgba(0, 0, 0, 0.255);
         -webkit-box-shadow: inset -5px -200px 120px -120px black, 0 0 15px rgba(0, 0, 0, 0.255);
         -moz-box-shadow: inset -5px -200px 120px -120px black, 0 0 15px rgba(0, 0, 0, 0.255);
     }
     .card3 {
-        height: 400px;
+        height: 350px;
         grid-column: 1;
         grid-row: 2;
         grid-template-rows: auto;
@@ -1001,7 +1083,7 @@ li {
     .card4 {
         grid-column: 2;
         grid-row: 2;
-        height: 400px;
+        height: 350px;
         grid-template-rows: auto;
         box-shadow: inset -5px -200px 120px -120px black, 0 0 15px rgba(0, 0, 0, 0.255);
         -webkit-box-shadow: inset -5px -200px 120px -120px black, 0 0 15px rgba(0, 0, 0, 0.255);
@@ -1010,7 +1092,7 @@ li {
     .card5 {
         grid-column: 3;
         grid-row: 1;
-        height: 400px;
+        height: 350px;
         grid-template-rows: auto;
         box-shadow: inset -5px -200px 120px -120px black, 0 0 15px rgba(0, 0, 0, 0.255);
         -webkit-box-shadow: inset -5px -200px 120px -120px black, 0 0 15px rgba(0, 0, 0, 0.255);
@@ -1019,7 +1101,16 @@ li {
     .card6 {
         grid-column: 3;
         grid-row: 2;
-        height: 400px;
+        height: 350px;
+        grid-template-rows: auto;
+        box-shadow: inset -5px -200px 120px -120px black, 0 0 15px rgba(0, 0, 0, 0.255);
+        -webkit-box-shadow: inset -5px -200px 120px -120px black, 0 0 15px rgba(0, 0, 0, 0.255);
+        -moz-box-shadow: inset -5px -200px 120px -120px black, 0 0 15px rgba(0, 0, 0, 0.255);
+    }
+    .card7 {
+        grid-column: 4;
+        grid-row: 1;
+        height: 350px;
         grid-template-rows: auto;
         box-shadow: inset -5px -200px 120px -120px black, 0 0 15px rgba(0, 0, 0, 0.255);
         -webkit-box-shadow: inset -5px -200px 120px -120px black, 0 0 15px rgba(0, 0, 0, 0.255);
@@ -1031,6 +1122,7 @@ li {
     .card4:hover .titile,
     .card5:hover .titile,
     .card6:hover .titile,
+    .card7:hover .titile,
     .img-desk:hover~.titile {
         width: 100%;
         height: 100%;
@@ -1043,7 +1135,7 @@ li {
 
 @media screen and (min-width:1444px) {
     .cardprj {
-        grid-template-columns: 23% 23% 23%;
+        grid-template-columns: 23% 23% 23% 23%;
     }
 }
 

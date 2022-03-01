@@ -129,6 +129,10 @@ document.getElementById('card6').addEventListener('click', () => {
     window.open('http://www.amac.eng.br/', '_blank');
 })
 
+document.getElementById('card7').addEventListener('click', () => {
+    window.open('https://site-next-lilac.vercel.app/', '_blank');
+})
+
 $(".meter > span").each(function() {
     $(this)
         .data("origWidth", $(this).width())
